@@ -1,0 +1,161 @@
+<div *ngIf="coc">
+  <h4>Mcpd Continuity Of Care</h4>
+  <hr />
+  <dl class="row">
+    <dt class="col-sm-4">
+      McpdHeaderId
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.mcpdHeaderId}}
+    </dd>
+    <dt class="col-sm-4">
+      PlanCode
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.planCode}}
+    </dd>
+    <dt class="col-sm-4">
+      Cin
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.cin}}
+    </dd>
+    <dt class="col-sm-4">
+      CocId
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.cocId}}
+    </dd>
+    <dt class="col-sm-4">
+      RecordType
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.recordType}}
+    </dd>
+    <dt class="col-sm-4">
+      ParentCocId
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.parentCocId}}
+    </dd>
+    <dt class="col-sm-4">
+      CocReceivedDate
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.cocReceivedDate}}
+    </dd>
+    <dt class="col-sm-4">
+      CocType
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.cocType}}
+    </dd>
+    <dt class="col-sm-4">
+      BenefitType
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.benefitType}}
+    </dd>
+    <dt class="col-sm-4">
+      CocDispositionIndicator
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.cocDispositionIndicator}}
+    </dd>
+    <dt class="col-sm-4">
+      CocExpirationDate
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.cocExpirationDate}}
+    </dd>
+    <dt class="col-sm-4">
+      CocDenialReasonIndicator
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.cocDenialReasonIndicator}}
+    </dd>
+    <dt class="col-sm-4">
+      SubmittingProviderNpi
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.submittingProviderNpi}}
+    </dd>
+    <dt class="col-sm-4">
+      CocProviderNpi
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.cocProviderNpi}}
+    </dd>
+    <dt class="col-sm-4">
+      ProviderTaxonomy
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.providerTaxonomy}}
+    </dd>
+    <dt class="col-sm-4">
+      MerExemptionId
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.merExemptionId}}
+    </dd>
+    <dt class="col-sm-4">
+      ExemptionToEnrollmentDenialCode
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.exemptionToEnrollmentDenialCode}}
+    </dd>
+    <dt class="col-sm-4">
+      ExemptionToEnrollmentDenialDate
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.exemptionToEnrollmentDenialDate}}
+    </dd>
+    <dt class="col-sm-4">
+      MerCocDispositionIndicator
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.merCocDispositionIndicator}}
+    </dd>
+    <dt class="col-sm-4">
+      MerCocDispositionDate
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.MerCocDispositionDate}}
+    </dd>
+    <dt class="col-sm-4">
+      ReasonMerCocNotMetIndicator
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.reasonMerCocNotMetIndicator}}
+    </dd>
+    <dt class="col-sm-4">
+      TradingPartnerCode
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.tradingPartnerCode}}
+    </dd>
+    <dt class="col-sm-4">
+      DataSource
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.dataSource}}
+    </dd>
+    <dt class="col-sm-4">
+      CaseNumber
+    </dt>
+    <dd class="col-sm-10">
+      {{coc.caseNumber}}
+    </dd>
+    <dt class="col-sm-4">
+      CaseStatus
+    </dt>
+    <dd>
+      {{coc.caseStatus}}
+    </dd>
+  </dl>
+  <div class="form-group">
+    <input type="button" class="btn btn-primary" value="Edit" (click)="onEdit()" />
+    <input type="button" class="btn btn-primary" value="Delete" (click)="onDelete()" />
+  </div>
+</div>
+

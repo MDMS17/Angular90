@@ -1,0 +1,137 @@
+<div *ngIf="oon">
+  <h4>McpdOutOfNetwork</h4>
+  <hr />
+  <dl class="row">
+    <dt class="col-sm-2">
+      McpdHeaderId
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.mcpdHeaderId}}
+    </dd>
+    <dt class="col-sm-2">
+      PlanCode
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.planCode}}
+    </dd>
+    <dt class="col-sm-2">
+      Cin
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.cin}}
+    </dd>
+    <dt class="col-sm-2">
+      OonId
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.oonId}}
+    </dd>
+    <dt class="col-sm-2">
+      RecordType
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.recordType}}
+    </dd>
+    <dt class="col-sm-2">
+      ParentOonId
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.parentOonId}}
+    </dd>
+    <dt class="col-sm-2">
+      OonRequestReceivedDate
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.oonRequestReceivedDate}}
+    </dd>
+    <dt class="col-sm-2">
+      OonRequestResolvedDate
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.oonRequestResolvedDate}}
+    </dd>
+    <dt class="col-sm-2">
+      PartialApprovalExplanation
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.partialApprovalExplanation}}
+    </dd>
+    <dt class="col-sm-2">
+      SpecialistProviderNpi
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.specialistProviderNpi}}
+    </dd>
+    <dt class="col-sm-2">
+      ProviderTaxonomy
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.providerTaxonomy}}
+    </dd>
+    <dt class="col-sm-2">
+      ServiceLocationAddressLine1
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.serviceLocationAddressLine1}}
+    </dd>
+    <dt class="col-sm-2">
+      ServiceLocationAddressLine2
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.serviceLocationAddressLine2}}
+    </dd>
+    <dt class="col-sm-2">
+      ServiceLocationCity
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.serviceLocationCity}}
+    </dd>
+    <dt class="col-sm-2">
+      ServiceLocationState
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.serviceLocationState}}
+    </dd>
+    <dt class="col-sm-2">
+      ServiceLocationZip
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.serviceLocationZip}}
+    </dd>
+    <dt class="col-sm-2">
+      ServiceLocationCountry
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.serviceLocationCountry}}
+    </dd>
+    <dt class="col-sm-2">
+      IPA
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.tradingPartnerCode}}
+    </dd>
+    <dt class="col-sm-2">
+      DataSource
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.dataSource}}
+    </dd>
+    <dt class="col-sm-2">
+      CaseNumber
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.caseNumber}}
+    </dd>
+    <dt class="col-sm-2">
+      CaseStatus
+    </dt>
+    <dd class="col-sm-10">
+      {{oon.caseStatus}}
+    </dd>
+  </dl>
+  <div class="form-group">
+    <input type="button" class="btn btn-primary" value="Edit" (click)="onEdit()" />
+    <input type="button" class="btn btn-primary" value="Delete" (click)="onDelete()" />
+  </div>
+</div>
+

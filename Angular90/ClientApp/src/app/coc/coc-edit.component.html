@@ -1,0 +1,112 @@
+<h2>{{title}}</h2>
+<div class="row">
+  <div class="col-md-4">
+    <input type="hidden" [(ngModel)]="McpdContinuityOfCareId" />
+    <div class="form-group">
+      <label for="McpdHeaderId" class="control-label">McpdHeaderId</label>
+      <input [(ngModel)]="coc.mcpdHeaderId" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="PlanCode" class="control-label">PlanCode</label>
+      <input [(ngModel)]="coc.planCode" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="Cin" class="control-label">Cin</label>
+      <input [(ngModel)]="coc.cin" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="CocId" class="control-label">CocId</label>
+      <input [(ngModel)]="coc.cocId" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="RecordType" class="control-label">RecordType</label>
+      <input [(ngModel)]="coc.recordType" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="ParentCocId" class="control-label">ParentCocId</label>
+      <input [(ngModel)]="coc.parentCocId" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="CocReceivedDate" class="control-label">CocReceivedDate</label>
+      <input [(ngModel)]="coc.cocReceivedDate" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="CocType" class="control-label">CocType</label>
+      <input [(ngModel)]="coc.cocType" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="BenefitType" class="control-label">BenefitType</label>
+      <input [(ngModel)]="coc.benefitType" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="CocDispositionIndicator" class="control-label">CocDispositionIndicator</label>
+      <input [(ngModel)]="coc.cocDispositionIndicator" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="CocExpirationDate" class="control-label">CocExpirationDate</label>
+      <input [(ngModel)]="coc.cocExpirationDate" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="CocDenialReasonIndicator" class="control-label">CocDenialReasonIndicator</label>
+      <input [(ngModel)]="coc.cocDenialReasonIndicator" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="SubmittingProviderNpi" class="control-label">SubmittingProviderNpi</label>
+      <input [(ngModel)]="coc.submittingProviderNpi" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="CocProviderNpi" class="control-label">CocProviderNpi</label>
+      <input [(ngModel)]="coc.cocProviderNpi" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="ProviderTaxonomy" class="control-label">ProviderTaxonomy</label>
+      <input [(ngModel)]="coc.providerTaxonomy" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="MerExemptionId" class="control-label">MerExemptionId</label>
+      <input [(ngModel)]="coc.merExemptionId" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="ExemptionToEnrollmentDenialCode" class="control-label">ExemptionToEnrollmentDenialCode</label>
+      <input [(ngModel)]="coc.exemptionToEnrollmentDenialCode" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="ExemptionToEnrollmentDenialDate" class="control-label">ExemptionToEnrollmentDenialDate</label>
+      <input [(ngModel)]="coc.exemptionToEnrollmentDenialDate" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="MerCocDispositionIndicator" class="control-label">MerCocDispositionIndicator</label>
+      <input [(ngModel)]="coc.merCocDispositionIndicator" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="MerCocDispositionDate" class="control-label">MerCocDispositionDate</label>
+      <input [(ngModel)]="coc.merCocDispositionDate" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="ReasonMerCocNotMetIndicator" class="control-label">ReasonMerCocNotMetIndicator</label>
+      <input [(ngModel)]="coc.reasonMerCocNotMetIndicator" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="TradingPartnerCode" class="control-label">TradingPartnerCode</label>
+      <input [(ngModel)]="coc.tradingPartnerCode" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="DataSource" class="control-label">DataSource</label>
+      <input [(ngModel)]="coc.dataSource" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="CaseNumber" class="control-label">CaseNumber</label>
+      <input [(ngModel)]="coc.caseNumber" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="CaseStatus" class="control-label">CaseStatus</label>
+      <input [(ngModel)]="coc.caseStatus" class="form-control" />
+    </div>
+    <div>
+      <input *ngIf="editMode" type="button" value="Apply changes" (click)="onSubmit(coc)" />
+      <input *ngIf="!editMode" type="button" value="Create the COC" (click)="onSubmit(coc)" />
+      <input type="button" value="Cancel" (click)="onBack()" />
+    </div>
+  </div>
+</div>
+

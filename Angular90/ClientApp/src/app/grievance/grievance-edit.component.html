@@ -1,0 +1,68 @@
+<h2>{{title}}</h2>
+<div class="row">
+  <div class="col-md-4">
+    <input type="hidden" [(ngModel)]="grievance.mcpdGrievanceId" />
+    <div class="form-group">
+      <label for="McpdHeaderId" class="control-label">McpdHeaderId</label>
+      <input [(ngModel)]="grievance.mcpdHeaderId" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label class="control-label">PlanCode</label>
+      <input [(ngModel)]="grievance.planCode" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label class="control-label">CIN</label>
+      <input [(ngModel)]="grievance.cin" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label class="control-label">GrievanceId</label>
+      <input [(ngModel)]="grievance.grievanceId" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label class="control-label">RecordType</label>
+      <input [(ngModel)]="grievance.recordType" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label class="control-label">ParentGrievanceId</label>
+      <input [(ngModel)]="grievance.parentGrievanceId" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label class="control-label">GrievanceReceivedDate</label>
+      <input [(ngModel)]="grievance.grievanceReceivedDate" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label class="control-label">GrievanceType</label>
+      <input [(ngModel)]="grievance.grievanceType" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label class="control-label">BenefitType</label>
+      <input [(ngModel)]="grievance.benefitType" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label class="control-label">ExemptIndicator</label>
+      <input [(ngModel)]="grievance.exemptIndicator" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label class="control-label">IPA</label>
+      <input [(ngModel)]="grievance.tradingPartnerCode" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label class="control-label">DataSource</label>
+      <input [(ngModel)]="grievance.dataSource" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label class="control-label">CaseNumber</label>
+      <input [(ngModel)]="grievance.caseNumber" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label class="control-label">CaseStatus</label>
+      <input [(ngModel)]="grievance.caseStatus" class="form-control" />
+    </div>
+    <div>
+      <input *ngIf="editMode" type="button" value="Apply changes" (click)="onSubmit(grievance)" />
+      <input *ngIf="!editMode" type="button" value="Create the Grievance" (click)="onSubmit(grievance)" />
+      <input type="button" value="Cancel" (click)="onBack()" />
+    </div>
+  </div>
+</div>
+

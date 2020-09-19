@@ -1,0 +1,89 @@
+<div *ngIf="grievance">
+  <h4>McpdGrievance</h4>
+  <hr />
+  <dl class="row">
+    <dt class="col-sm-2">
+      IPA
+    </dt>
+    <dd class="col-sm-10">
+      {{grievance.tradingPartnerCode}}
+    </dd>
+    <dt class="col-sm-2">
+      PlanCode
+    </dt>
+    <dd class="col-sm-10">
+      {{grievance.planCode}}
+    </dd>
+    <dt class="col-sm-2">
+      CIN
+    </dt>
+    <dd class="col-sm-10">
+      {{grievance.cin}}
+    </dd>
+    <dt class="col-sm-2">
+      GrievanceId
+    </dt>
+    <dd class="col-sm-10">
+      {{grievance.grievanceId}}
+    </dd>
+    <dt class="col-sm-2">
+      RecordType
+    </dt>
+    <dd class="col-sm-10">
+      {{grievance.recordType}}
+    </dd>
+    <dt class="col-sm-2">
+      ParentGrievanceId
+    </dt>
+    <dd class="col-sm-10">
+      {{grievance.parentGrievanceId}}
+    </dd>
+    <dt class="col-sm-2">
+      GrievanceReceivedDate
+    </dt>
+    <dd class="col-sm-10">
+      {{grievance.grievanceReceivedDate}}
+    </dd>
+    <dt class="col-sm-2">
+      GrievanceType
+    </dt>
+    <dd class="col-sm-10">
+      {{grievance.grievanceType}}
+    </dd>
+    <dt class="col-sm-2">
+      BenefitType
+    </dt>
+    <dd class="col-sm-10">
+      {{grievance.benefitType}}
+    </dd>
+    <dt class="col-sm-2">
+      ExemptIndicator
+    </dt>
+    <dd class="col-sm-10">
+      {{grievance.exemptIndicator}}
+    </dd>
+    <dt class="col-sm-2">
+      DataSource
+    </dt>
+    <dd class="col-sm-10">
+      {{grievance.dataSource}}
+    </dd>
+    <dt class="col-sm-2">
+      CaseNumber
+    </dt>
+    <dd class="col-sm-10">
+      {{grievance.caseNumber}}
+    </dd>
+    <dt class="col-sm-2">
+      CaseStatus
+    </dt>
+    <dd class="col-sm-10">
+      {{grievance.caseStatus}}
+    </dd>
+  </dl>
+  <div class="form-group">
+    <input type="button" class="btn btn-primary" value="Edit" (click)="onEdit()" />
+    <input type="button" class="btn btn-primary" value="Delete" (click)="onDelete()" />
+  </div>
+</div>
+

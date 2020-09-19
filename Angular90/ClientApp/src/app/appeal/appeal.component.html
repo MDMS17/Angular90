@@ -1,0 +1,89 @@
+<div *ngIf="appeal">
+  <h4>McpdAppeal</h4>
+  <hr />
+  <div class="row">
+    <div class="col-md-4">
+      <input type="hidden" [(ngModel)]="appeal.mcpdAppealId" />
+      <div class="form-group">
+        <label for="McpdHeaderId" class="control-label">McpdHeaderId</label>
+        <input [(ngModel)]="appeal.mcpdHeaderId" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="PlanCode" class="control-label">PlanCode</label>
+        <input [(ngModel)]="appeal.planCode" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="Cin" class="control-label">Cin</label>
+        <input [(ngModel)]="appeal.cin" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="AppealId" class="control-label">AppealId</label>
+        <input [(ngModel)]="appeal.appealId" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="RecordType" class="control-label">RecordType</label>
+        <input [(ngModel)]="appeal.recordType" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="ParentGrievanceId" class="control-label">ParentGrievanceId</label>
+        <input [(ngModel)]="appeal.parentGrievanceId" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="ParentAppealId" class="control-label">ParentAppealId</label>
+        <input [(ngModel)]="appeal.parentAppealId" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="AppealReceivedDate" class="control-label">AppealReceivedDate</label>
+        <input [(ngModel)]="appeal.appealReceivedDate" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="NoticeOfActionDate" class="control-label">NoticeOfActionDate</label>
+        <input [(ngModel)]="appeal.noticeOfActionDate" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="AppealType" class="control-label">AppealType</label>
+        <input [(ngModel)]="appeal.appealType" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="BenefitType" class="control-label">BenefitType</label>
+        <input [(ngModel)]="appeal.benefitType" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="AppealResolutionStatusIndicator" class="control-label">AppealResolutionStatusIndicator</label>
+        <input [(ngModel)]="appeal.appealResolutionStatusIndicator" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="AppealResolutionDate" class="control-label">AppealResolutionDate</label>
+        <input [(ngModel)]="appeal.appealResolutionDate" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="PartiallyOverturnIndicator" class="control-label">PartiallyOverturnIndicator</label>
+        <input [(ngModel)]="appeal.partiallyOverturnIndicator" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="ExpeditedIndicator" class="control-label">ExpeditedIndicator</label>
+        <input [(ngModel)]="appeal.expeditedIndicator" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="TradingPartnerCode" class="control-label">TradingPartnerCode</label>
+        <input [(ngModel)]="appeal.tradingPartnerCode" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="DataSource" class="control-label">Datasource</label>
+        <input [(ngModel)]="appeal.dataSource" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="CaseNumber" class="control-label">CaseNumber</label>
+        <input [(ngModel)]="appeal.caseNumber" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="CaseStatus" class="control-label">CaseStatus</label>
+        <input [(ngModel)]="appeal.caseStatus" class="form-control" />
+      </div>
+      <div class="form-group">
+        <input type="button" class="btn btn-primary" value="Edit" (click)="onEdit()" />
+        <input type="button" class="btn btn-primary" value="Delete" (click)="onDelete()" />
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<p>
+  <input type="button" value="Create New PCP Assignment" (click)="onCreate()" />
+</p>
+<table class="table" style="white-space:nowrap;">
+  <thead>
+    <tr>
+    <tr>
+      <th>
+        Source
+      </th>
+      <th>
+        PlanCode
+      </th>
+      <th>
+        CIN
+      </th>
+      <th>
+        NPI
+      </th>
+      <th>
+        DataSource
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pcpa of pcpas" (click)="onSelect(pcpa)" style="cursor:pointer;">
+      <td>
+        {{pcpa.tradingPartnerCode}}
+      </td>
+      <td>
+        {{pcpa.planCode}}
+      </td>
+      <td>
+        {{pcpa.cin}}
+      </td>
+      <td>
+        {{pcpa.npi}}
+      </td>
+      <td>
+        {{pcpa.dataSource}}
+      </td>
+    </tr>
+  </tbody>
+</table>

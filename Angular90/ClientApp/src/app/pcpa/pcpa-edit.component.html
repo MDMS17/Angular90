@@ -1,0 +1,35 @@
+<h2>{{title}}</h2>
+<div class="row">
+  <div class="col-md-4">
+    <input type="hidden" [(ngModel)]="pcpa.pcpAssignmentId" />
+    <div class="form-group">
+      <label for="PcpHeaderId" class="control-label">PCPHeaderId</label>
+      <input [(ngModel)]="pcpa.pcpHeaderId" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="PlanCode" class="control-label">PlanCode</label>
+      <input [(ngModel)]="pcpa.planCode" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="Cin" class="control-label">CIN</label>
+      <input [(ngModel)]="pcpa.cin" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="Npi" class="control-label">NPI</label>
+      <input [(ngModel)]="pcpa.npi" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="TradingPartnerCode" class="control-label">TradingPartnerCode</label>
+      <input [(ngModel)]="pcpa.tradingPartnerCode" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="DataSource" class="control-label">DataSource</label>
+      <input [(ngModel)]="pcpa.dataSource" class="form-control" />
+    </div>
+    <div>
+      <input *ngIf="editMode" type="button" value="Apply changes" (click)="onSubmit(pcpa)" />
+      <input *ngIf="!editMode" type="button" value="Create PCP Assignment " (click)="onSubmit(pcpa)" />
+      <input type="button" value="Cancel" (click)="onBack()" />
+    </div>
+  </div>
+</div>
